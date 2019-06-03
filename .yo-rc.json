@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.dropshipping",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "monolith",
+    "baseName": "dropshipping",
+    "packageName": "com.dropshipping",
+    "packageFolder": "com/dropshipping",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZTE3MjBiNTkzNmRiYjRlYTViZGFjN2U3YWFjY2E0NjdjZWIxODVmODE4OGE0MGQ1YjM1ZGM0NDVkM2NhMDA3ODZhNzA4NjQzOTQ3NjE0Nzc3MmMyN2Q3ZjNmM2M3NGI5OTUzZDRhYTk1MDdjM2UwM2Q5MjQ1NDJhNWZiYWZjZWQ=",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "zh-cn", "zh-tw", "vi"]
+  }
+}
