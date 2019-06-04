@@ -1,0 +1,376 @@
+entity Country {
+   name String,
+   enabled Boolean,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+entity Region {
+   name String,
+   enabled Boolean,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+entity City {
+   name String,
+   index Integer,
+   enabled Boolean,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+entity District {
+   name String,
+   enabled Boolean,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+entity Ward {
+   name String,
+   enabled Boolean,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship ManyToMany {
+   Region{user(login)} to User
+}
+
+relationship OneToMany {
+   Country{cities} to City,
+   City{districts} to District,
+   Region{countries} to Country,
+   District{wards} to Ward
+}
+
+enum Gender {
+   MALE, FEMALE, OTHER
+}
+
+entity UserProfile {
+   fullName String,
+   gender Gender,
+   email String,
+   mobile String,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship OneToOne {
+   UserProfile{createBy(login)} to User,
+   UserProfile{updateBy(login)} to User,
+   UserProfile{city(name)} to City,
+   UserProfile{district(name)} to District
+}
+
+entity UserShippingAddress {
+   name String,
+   address String,
+   mobile String,
+   note String,
+   isShippingAddress Boolean,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship ManyToOne {
+   UserShippingAddress{createBy(login)} to User,
+   UserShippingAddress{updateBy(login)} to User,
+   UserShippingAddress{city} to City,
+   UserShippingAddress{district} to District
+}
+
+relationship OneToMany {
+   UserProfile{address} to UserShippingAddress
+}
+
+enum StatusType {
+   OPEN, PENDING, PAID, CANCELED, EXPIRED, SOLD
+}
+
+entity OrderCart {
+   code String,
+   avatar String,
+   amountDiscount Float,
+   amountPaid Float,
+   depositAmount Float,
+   depositRatio Float,
+   depositTime LocalDate,
+   domesticShippingChinaFeeNDT Float,
+   domesticShippingChinaFee Float,
+   domesticShippingVietnamFee Float,
+   quantityOrder Integer,
+   quantityPending Integer,
+   quantityReceived Integer,
+   rate Integer,
+   receiverName String,
+   receiverAddress String,
+   receiverMobile String,
+   receiverNote String,
+   refundAmountByAlipay Float,
+   refundAmountByComplaint Float,
+   refundAmountByOrder Float,
+   refundAmountPending Float,
+   shippingChinaVietnamFee Float,
+   shippingChinaVietnamFeeDiscount Float,
+   shopAliwang String,
+   shopId String,
+   shopLink String,
+   shopName String,
+   website String,
+   websiteCode String,
+   websiteLadingCode String,
+   status OrderStatus,
+   statusName String,
+   statusStyle String,
+   tallyFee Integer,
+   totalAmount Float,
+   totalAmountNDT Float,
+   totalPaidByCustomer Float,
+   serviceFee Float,
+   serviceFeeDiscount Float,
+   totalServiceFee Float,
+   finalAmount Float,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship ManyToOne {
+   OrderCart{buyer(login)} to User,
+   OrderCart{chinaStocker(login)} to User,
+   OrderCart{vietnamStocker(login)} to User,
+   OrderCart{exporter(login)} to User,
+   OrderCart{createBy(login)} to User,
+   OrderCart{updateBy(login)} to User
+}
+
+enum OrderStatus {
+  DEPOSITED, ARE_BUYING, PURCHASED, SELLER_DELIVERY, WAREHOUSE_CHINA, DELIVERING_CHINA_VIETNAM, WAREHOUSE_VIETNAM, DELIVERY_REQUIREMENTS, DELIVERING_VIETNAM, DELIVERED, CANCELLED, LOST, RETURN
+}
+
+entity OrderHistory {
+   status OrderStatus,
+   description String,
+   createAt LocalDate
+}
+
+relationship ManyToOne {
+   OrderHistory{createBy(login)} to User,
+   OrderHistory{updateBy(login)} to User
+}
+
+enum CustomerLevel {
+   NORMAL, SILVER, GOLD, PLATINUM
+}
+
+enum PaymentMethod {
+   CASH, BANK_TRANSFER, CARD, PAYPAL
+}
+
+enum PaymentStatusType {
+   PENDING, PAID, CANCELED
+}
+
+entity OrderItem {
+   avatar String,
+   originLink String,
+   name String,
+   note String,
+   price Float,
+   priceNDT Float,
+   propertiesId String,
+   propertiesImage String,
+   propertiesMD5 String,
+   propertiesName String,
+   propertiesType String,
+   quantityOrder Integer,
+   quantityPending Integer,
+   quantityReceived Integer,
+   totalPrice Float,
+   totalPriceNDT Float,
+   website String,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship ManyToOne {
+   OrderItem{createBy(login)} to User,
+   OrderItem{updateBy(login)} to User
+}
+
+entity OrderPackage {
+   ladingCode String,
+   heightPackage Float,
+   widthPackage Float,
+   lengthPackage Float,
+   netWeight Float,
+   status String,
+   statusName String,
+   statusStyle String,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+entity OrderPackageHistory {
+   status String,
+   statusName String,
+   statusStyle String,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship OneToMany {
+   OrderPackage{packages} to OrderPackageHistory
+}
+
+relationship ManyToOne {
+   OrderPackage{warehouse} to Warehouse,
+   OrderPackage{createBy(login)} to User,
+   OrderPackage{updateBy(login)} to User,
+   OrderPackageHistory{warehouse} to Warehouse,
+   OrderPackageHistory{createBy(login)} to User,
+   OrderPackageHistory{updateBy(login)} to User
+}
+
+enum TransactionType {
+   DEPOSIT, ORDER_PAYMENT, REFUND
+}
+
+entity OrderTransaction {
+   amount Float,
+   note String,
+   status TransactionType,
+   orderDate LocalDate,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship ManyToOne {
+   OrderTransaction{approver(login)} to User,
+   OrderTransaction{createBy(login)} to User,
+   OrderTransaction{updateBy(login)} to User
+}
+
+enum CommentType {
+   CUSTOMER_LOG, CUSTOMER_CHAT, STAFF_LOG, STAFF_CHAT, SYSTEM_LOG
+}
+
+entity OrderComment {
+   message String,
+   sender String,
+   type CommentType,
+   createAt LocalDate
+}
+
+relationship OneToMany {
+   OrderCart{items} to OrderItem,
+   OrderCart{comments} to OrderComment,
+   OrderCart{histories} to OrderHistory,
+   OrderCart{packages} to OrderPackage,
+   OrderCart{transactions} to OrderTransaction
+}
+
+entity ShoppingCart {
+   aliwangwang String,
+   depositAmount Float,
+   depositRatio Float,
+   serviceFee Float,
+   serviceFeeDiscount Float,
+   itemChecking Boolean,
+   itemWoodCrating Boolean,
+   shopId String,
+   shopLink String,
+   shopName String,
+   shopNote String,
+   sourceData String,
+   totalAmount Float,
+   totalLink Integer,
+   totalQuantity Integer,
+   finalAmount Float,
+   website String,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship ManyToOne {
+   ShoppingCart{createBy(login)} to User,
+   ShoppingCart{updateBy(login)} to User
+}
+
+entity ShoppingCartItem {
+   itemId String,
+   itemImage String,
+   itemLink String,
+   itemPrice Float,
+   itemPriceNDT Float,
+   itemNote String,
+   propertiesId String,
+   propertiesImage String,
+   propertiesMD5 String,
+   propertiesName String,
+   propertiesType String,
+   quantity Integer,
+   requireMin Integer,
+   totalAmount Float,
+   totalAmountNDT Float,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship ManyToOne {
+   ShoppingCartItem{createBy(login)} to User,
+   ShoppingCartItem{updateBy(login)} to User
+}
+
+entity Warehouse {
+   name String,
+   address String,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+entity Delivery {
+   deliveryMethod String,
+   deliveryMethodName String,
+   exportTime LocalDate,
+   packedTime LocalDate,
+   status String,
+   statusName String,
+   statusStyle String,
+   totalWeight Float,
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+entity DeliveryPackage {
+   createAt LocalDate,
+   updateAt LocalDate
+}
+
+relationship ManyToOne {
+   DeliveryPackage{createBy(login)} to User,
+   DeliveryPackage{updateBy(login)} to User
+   Delivery{warehouse} to Warehouse,
+   Delivery{createBy(login)} to User,
+   Delivery{updateBy(login)} to User
+}
+
+relationship OneToMany {
+   ShoppingCart{items} to ShoppingCartItem,
+   Delivery{packages} to DeliveryPackage,
+   Delivery{orders} to OrderPackage
+}
+
+// Set pagination options
+paginate Region, City, District, Ward, Country with pagination
+
+paginate UserProfile with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceClass
+
+filter Region, City, District, Ward, Country, UserProfile

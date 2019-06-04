@@ -1,0 +1,24 @@
+{
+  "aliwangwang": "天猫国际进口超市",
+  "shopId": "123971619",
+  "shopName": "天猫国际进口超市",
+  "shopLink": "https://import.tmall.com",
+  "website": "TMALL",
+  "items": [
+    {
+      "itemId": "550529495024",
+      "itemName": "【直营】天梭进口休闲石英男表俊雅系列T063.610.36.037.00瑞士",
+      "itemLink": "https://detail.tmall.hk/hk/item.htm?spm=a2231.11608039.1493763705.2.690e1726sBDFP7&acm=lb-zebra-352598-5075428.1003.4.4554972&id=550529495024&scm=1003.4.lb-zebra-352598-5075428.ITEM_550529495024_4554972&skuId=3519378430169",
+      "itemImage": "https://img.alicdn.com/imgextra/i3/2549841410/O1CN010FnKTm1MHozDXBjY7_!!2549841410-0-sm.jpg_60x60q90.jpg",
+      "saleLocation": "杭州",
+      "stock": "10",
+      "quantity": "1",
+      "itemPriceNDT": "3300.00",
+      "totalAmountNDT": 3300,
+      "propetiesType": "颜色分类",
+      "propetiesId": "1627207:3232482",
+      "propetiesName": "钢带间金T063.610.22.037.00",
+      "propetiesImage": "https://img.alicdn.com/imgextra/i1/2549841410/TB2ohNkiLMTUeJjSZFKXXagopXa_!!2549841410.jpg_500x500q90.jpg"
+    }
+  ]
+}
