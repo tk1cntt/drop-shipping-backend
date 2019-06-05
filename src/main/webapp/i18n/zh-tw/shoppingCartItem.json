@@ -1,0 +1,40 @@
+{
+  "dropshippingApp": {
+    "shoppingCartItem": {
+      "home": {
+        "title": "Shopping Cart Items",
+        "createLabel": "建立一筆新的 Shopping Cart Item",
+        "createOrEditLabel": "建立或編輯 Shopping Cart Item"
+      },
+      "created": "新的 Shopping Cart Item 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Shopping Cart Item 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Shopping Cart Item 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Shopping Cart Item {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Shopping Cart Item"
+      },
+      "itemId": "Item Id",
+      "itemImage": "Item Image",
+      "itemLink": "Item Link",
+      "itemPrice": "Item Price",
+      "itemPriceNDT": "Item Price NDT",
+      "itemNote": "Item Note",
+      "propertiesId": "Properties Id",
+      "propertiesImage": "Properties Image",
+      "propertiesMD5": "Properties MD 5",
+      "propertiesName": "Properties Name",
+      "propertiesType": "Properties Type",
+      "quantity": "Quantity",
+      "requireMin": "Require Min",
+      "totalAmount": "Total Amount",
+      "totalAmountNDT": "Total Amount NDT",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "shoppingCart": "Shopping Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "dropshippingApp": {
+    "delivery": {
+      "home": {
+        "title": "Deliveries",
+        "createLabel": "建立一筆新的 Delivery",
+        "createOrEditLabel": "建立或編輯 Delivery"
+      },
+      "created": "新的 Delivery 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Delivery 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Delivery 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Delivery {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Delivery"
+      },
+      "deliveryMethod": "Delivery Method",
+      "deliveryMethodName": "Delivery Method Name",
+      "exportTime": "Export Time",
+      "packedTime": "Packed Time",
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "totalWeight": "Total Weight",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "packages": "Packages",
+      "orders": "Orders",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "dropshippingApp": {
+    "userProfile": {
+      "home": {
+        "title": "User Profiles",
+        "createLabel": "Thêm mới một User Profile",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật User Profile"
+      },
+      "created": "Một User Profile mới được tạo với định danh {{ param }}",
+      "updated": "Một User Profile cập nhật với định danh {{ param }}",
+      "deleted": "Một User Profile đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa User Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "User Profile"
+      },
+      "fullName": "Full Name",
+      "gender": "Gender",
+      "email": "Email",
+      "mobile": "Mobile",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "createBy": "Create By",
+      "updateBy": "Update By",
+      "city": "City",
+      "district": "District",
+      "address": "Address"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "country": {
+      "home": {
+        "title": "Countries",
+        "createLabel": "建立一筆新的 Country",
+        "createOrEditLabel": "建立或編輯 Country"
+      },
+      "created": "新的 Country 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Country 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Country 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Country {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Country"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "cities": "Cities",
+      "region": "Region"
+    }
+  }
+}

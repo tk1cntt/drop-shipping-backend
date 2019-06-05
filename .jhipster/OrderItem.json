@@ -1,0 +1,112 @@
+{
+    "name": "OrderItem",
+    "fields": [
+        {
+            "fieldName": "avatar",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "originLink",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "note",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "priceNDT",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "propertiesId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesImage",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesMD5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "quantityOrder",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "quantityPending",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "quantityReceived",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "totalPrice",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "totalPriceNDT",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "website",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "orderCart",
+            "otherEntityName": "orderCart",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderItem",
+            "relationshipName": "createBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderItem",
+            "relationshipName": "updateBy",
+            "otherEntityField": "login"
+        }
+    ],
+    "changelogDate": "20190604231102",
+    "entityTableName": "order_item",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

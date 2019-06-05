@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Ward.
+    -->
+    <changeSet id="20190604231057-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="district_id"
+                                 baseTableName="ward"
+                                 constraintName="fk_ward_district_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="district"/>
+
+    </changeSet>
+</databaseChangeLog>

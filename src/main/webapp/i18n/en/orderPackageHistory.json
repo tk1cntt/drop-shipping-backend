@@ -1,0 +1,29 @@
+{
+  "dropshippingApp": {
+    "orderPackageHistory": {
+      "home": {
+        "title": "Order Package Histories",
+        "createLabel": "Create a new Order Package History",
+        "createOrEditLabel": "Create or edit a Order Package History"
+      },
+      "created": "A new Order Package History is created with identifier {{ param }}",
+      "updated": "A Order Package History is updated with identifier {{ param }}",
+      "deleted": "A Order Package History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Order Package History {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Package History"
+      },
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderPackage": "Order Package",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

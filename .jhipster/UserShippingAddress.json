@@ -1,0 +1,78 @@
+{
+    "name": "UserShippingAddress",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "address",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mobile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "note",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isShippingAddress",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "userProfile",
+            "otherEntityName": "userProfile",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "userShippingAddress",
+            "relationshipName": "createBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "userShippingAddress",
+            "relationshipName": "updateBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "city",
+            "otherEntityRelationshipName": "userShippingAddress",
+            "relationshipName": "city",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "district",
+            "otherEntityRelationshipName": "userShippingAddress",
+            "relationshipName": "district",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190604231059",
+    "entityTableName": "user_shipping_address",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

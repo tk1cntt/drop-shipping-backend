@@ -1,0 +1,42 @@
+{
+  "dropshippingApp": {
+    "shoppingCart": {
+      "home": {
+        "title": "Shopping Carts",
+        "createLabel": "创建新 Shopping Cart",
+        "createOrEditLabel": "创建或编辑 Shopping Cart"
+      },
+      "created": "Shopping Cart {{ param }} 创建成功",
+      "updated": "Shopping Cart {{ param }} 更新成功",
+      "deleted": "Shopping Cart {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Shopping Cart {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Shopping Cart"
+      },
+      "aliwangwang": "Aliwangwang",
+      "depositAmount": "Deposit Amount",
+      "depositRatio": "Deposit Ratio",
+      "serviceFee": "Service Fee",
+      "serviceFeeDiscount": "Service Fee Discount",
+      "itemChecking": "Item Checking",
+      "itemWoodCrating": "Item Wood Crating",
+      "shopId": "Shop Id",
+      "shopLink": "Shop Link",
+      "shopName": "Shop Name",
+      "shopNote": "Shop Note",
+      "sourceData": "Source Data",
+      "totalAmount": "Total Amount",
+      "totalLink": "Total Link",
+      "totalQuantity": "Total Quantity",
+      "finalAmount": "Final Amount",
+      "website": "Website",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "items": "Items",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

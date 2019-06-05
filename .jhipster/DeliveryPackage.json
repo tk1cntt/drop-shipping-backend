@@ -1,0 +1,44 @@
+{
+    "name": "DeliveryPackage",
+    "fields": [
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "delivery",
+            "otherEntityName": "delivery",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "deliveryPackage",
+            "relationshipName": "createBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "deliveryPackage",
+            "relationshipName": "updateBy",
+            "otherEntityField": "login"
+        }
+    ],
+    "changelogDate": "20190604231111",
+    "entityTableName": "delivery_package",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

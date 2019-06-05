@@ -1,0 +1,25 @@
+{
+  "dropshippingApp": {
+    "deliveryPackage": {
+      "home": {
+        "title": "Delivery Packages",
+        "createLabel": "建立一筆新的 Delivery Package",
+        "createOrEditLabel": "建立或編輯 Delivery Package"
+      },
+      "created": "新的 Delivery Package 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Delivery Package 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Delivery Package 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Delivery Package {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Delivery Package"
+      },
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "delivery": "Delivery",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

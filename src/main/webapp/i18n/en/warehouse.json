@@ -1,0 +1,24 @@
+{
+  "dropshippingApp": {
+    "warehouse": {
+      "home": {
+        "title": "Warehouses",
+        "createLabel": "Create a new Warehouse",
+        "createOrEditLabel": "Create or edit a Warehouse"
+      },
+      "created": "A new Warehouse is created with identifier {{ param }}",
+      "updated": "A Warehouse is updated with identifier {{ param }}",
+      "deleted": "A Warehouse is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Warehouse {{ id }}?"
+      },
+      "detail": {
+        "title": "Warehouse"
+      },
+      "name": "Name",
+      "address": "Address",
+      "createAt": "Create At",
+      "updateAt": "Update At"
+    }
+  }
+}

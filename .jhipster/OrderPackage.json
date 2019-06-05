@@ -1,0 +1,95 @@
+{
+    "name": "OrderPackage",
+    "fields": [
+        {
+            "fieldName": "ladingCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "heightPackage",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "widthPackage",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "lengthPackage",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "netWeight",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusStyle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "orderCart",
+            "otherEntityName": "orderCart",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "orderPackageHistory",
+            "otherEntityRelationshipName": "orderPackage",
+            "relationshipName": "packages"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "warehouse",
+            "otherEntityRelationshipName": "orderPackage",
+            "relationshipName": "warehouse",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderPackage",
+            "relationshipName": "createBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderPackage",
+            "relationshipName": "updateBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipName": "delivery",
+            "otherEntityName": "delivery",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190604231103",
+    "entityTableName": "order_package",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

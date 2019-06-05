@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "orderHistory": {
+      "home": {
+        "title": "Order Histories",
+        "createLabel": "Create a new Order History",
+        "createOrEditLabel": "Create or edit a Order History"
+      },
+      "created": "A new Order History is created with identifier {{ param }}",
+      "updated": "A Order History is updated with identifier {{ param }}",
+      "deleted": "A Order History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Order History {{ id }}?"
+      },
+      "detail": {
+        "title": "Order History"
+      },
+      "status": "Status",
+      "description": "Description",
+      "createAt": "Create At",
+      "orderCart": "Order Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity OrderCart.
+    -->
+    <changeSet id="20190604231100-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="buyer_id"
+                                 baseTableName="order_cart"
+                                 constraintName="fk_order_cart_buyer_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="china_stocker_id"
+                                 baseTableName="order_cart"
+                                 constraintName="fk_order_cart_china_stocker_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="vietnam_stocker_id"
+                                 baseTableName="order_cart"
+                                 constraintName="fk_order_cart_vietnam_stocker_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="exporter_id"
+                                 baseTableName="order_cart"
+                                 constraintName="fk_order_cart_exporter_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="create_by_id"
+                                 baseTableName="order_cart"
+                                 constraintName="fk_order_cart_create_by_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="update_by_id"
+                                 baseTableName="order_cart"
+                                 constraintName="fk_order_cart_update_by_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+    </changeSet>
+</databaseChangeLog>

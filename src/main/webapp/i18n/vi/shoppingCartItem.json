@@ -1,0 +1,40 @@
+{
+  "dropshippingApp": {
+    "shoppingCartItem": {
+      "home": {
+        "title": "Shopping Cart Items",
+        "createLabel": "Thêm mới một Shopping Cart Item",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Shopping Cart Item"
+      },
+      "created": "Một Shopping Cart Item mới được tạo với định danh {{ param }}",
+      "updated": "Một Shopping Cart Item cập nhật với định danh {{ param }}",
+      "deleted": "Một Shopping Cart Item đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Shopping Cart Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Shopping Cart Item"
+      },
+      "itemId": "Item Id",
+      "itemImage": "Item Image",
+      "itemLink": "Item Link",
+      "itemPrice": "Item Price",
+      "itemPriceNDT": "Item Price NDT",
+      "itemNote": "Item Note",
+      "propertiesId": "Properties Id",
+      "propertiesImage": "Properties Image",
+      "propertiesMD5": "Properties MD 5",
+      "propertiesName": "Properties Name",
+      "propertiesType": "Properties Type",
+      "quantity": "Quantity",
+      "requireMin": "Require Min",
+      "totalAmount": "Total Amount",
+      "totalAmountNDT": "Total Amount NDT",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "shoppingCart": "Shopping Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

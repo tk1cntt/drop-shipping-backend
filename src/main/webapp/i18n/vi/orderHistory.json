@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "orderHistory": {
+      "home": {
+        "title": "Order Histories",
+        "createLabel": "Thêm mới một Order History",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Order History"
+      },
+      "created": "Một Order History mới được tạo với định danh {{ param }}",
+      "updated": "Một Order History cập nhật với định danh {{ param }}",
+      "deleted": "Một Order History đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Order History {{ id }}?"
+      },
+      "detail": {
+        "title": "Order History"
+      },
+      "status": "Status",
+      "description": "Description",
+      "createAt": "Create At",
+      "orderCart": "Order Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

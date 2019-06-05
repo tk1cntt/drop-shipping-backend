@@ -1,0 +1,42 @@
+{
+  "dropshippingApp": {
+    "shoppingCart": {
+      "home": {
+        "title": "Shopping Carts",
+        "createLabel": "Thêm mới một Shopping Cart",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Shopping Cart"
+      },
+      "created": "Một Shopping Cart mới được tạo với định danh {{ param }}",
+      "updated": "Một Shopping Cart cập nhật với định danh {{ param }}",
+      "deleted": "Một Shopping Cart đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Shopping Cart {{ id }}?"
+      },
+      "detail": {
+        "title": "Shopping Cart"
+      },
+      "aliwangwang": "Aliwangwang",
+      "depositAmount": "Deposit Amount",
+      "depositRatio": "Deposit Ratio",
+      "serviceFee": "Service Fee",
+      "serviceFeeDiscount": "Service Fee Discount",
+      "itemChecking": "Item Checking",
+      "itemWoodCrating": "Item Wood Crating",
+      "shopId": "Shop Id",
+      "shopLink": "Shop Link",
+      "shopName": "Shop Name",
+      "shopNote": "Shop Note",
+      "sourceData": "Source Data",
+      "totalAmount": "Total Amount",
+      "totalLink": "Total Link",
+      "totalQuantity": "Total Quantity",
+      "finalAmount": "Final Amount",
+      "website": "Website",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "items": "Items",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

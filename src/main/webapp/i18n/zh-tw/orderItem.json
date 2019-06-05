@@ -1,0 +1,42 @@
+{
+  "dropshippingApp": {
+    "orderItem": {
+      "home": {
+        "title": "Order Items",
+        "createLabel": "建立一筆新的 Order Item",
+        "createOrEditLabel": "建立或編輯 Order Item"
+      },
+      "created": "新的 Order Item 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Order Item 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Order Item 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Order Item {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Order Item"
+      },
+      "avatar": "Avatar",
+      "originLink": "Origin Link",
+      "name": "Name",
+      "note": "Note",
+      "price": "Price",
+      "priceNDT": "Price NDT",
+      "propertiesId": "Properties Id",
+      "propertiesImage": "Properties Image",
+      "propertiesMD5": "Properties MD 5",
+      "propertiesName": "Properties Name",
+      "propertiesType": "Properties Type",
+      "quantityOrder": "Quantity Order",
+      "quantityPending": "Quantity Pending",
+      "quantityReceived": "Quantity Received",
+      "totalPrice": "Total Price",
+      "totalPriceNDT": "Total Price NDT",
+      "website": "Website",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderCart": "Order Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

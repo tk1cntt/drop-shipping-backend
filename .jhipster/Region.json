@@ -1,0 +1,46 @@
+{
+    "name": "Region",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "enabled",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "country",
+            "otherEntityRelationshipName": "region",
+            "relationshipName": "countries"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "region",
+            "relationshipName": "user",
+            "otherEntityField": "login",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190604231054",
+    "entityTableName": "region",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

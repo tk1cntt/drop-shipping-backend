@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "country": {
+      "home": {
+        "title": "Countries",
+        "createLabel": "Thêm mới một Country",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Country"
+      },
+      "created": "Một Country mới được tạo với định danh {{ param }}",
+      "updated": "Một Country cập nhật với định danh {{ param }}",
+      "deleted": "Một Country đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Country {{ id }}?"
+      },
+      "detail": {
+        "title": "Country"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "cities": "Cities",
+      "region": "Region"
+    }
+  }
+}

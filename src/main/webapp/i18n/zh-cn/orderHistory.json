@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "orderHistory": {
+      "home": {
+        "title": "Order Histories",
+        "createLabel": "创建新 Order History",
+        "createOrEditLabel": "创建或编辑 Order History"
+      },
+      "created": "Order History {{ param }} 创建成功",
+      "updated": "Order History {{ param }} 更新成功",
+      "deleted": "Order History {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Order History {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Order History"
+      },
+      "status": "Status",
+      "description": "Description",
+      "createAt": "Create At",
+      "orderCart": "Order Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

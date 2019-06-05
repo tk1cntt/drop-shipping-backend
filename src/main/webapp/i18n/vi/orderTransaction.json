@@ -1,0 +1,30 @@
+{
+  "dropshippingApp": {
+    "orderTransaction": {
+      "home": {
+        "title": "Order Transactions",
+        "createLabel": "Thêm mới một Order Transaction",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Order Transaction"
+      },
+      "created": "Một Order Transaction mới được tạo với định danh {{ param }}",
+      "updated": "Một Order Transaction cập nhật với định danh {{ param }}",
+      "deleted": "Một Order Transaction đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Order Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Transaction"
+      },
+      "amount": "Amount",
+      "note": "Note",
+      "status": "Status",
+      "orderDate": "Order Date",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderCart": "Order Cart",
+      "approver": "Approver",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

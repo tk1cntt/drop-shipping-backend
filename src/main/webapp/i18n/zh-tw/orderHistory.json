@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "orderHistory": {
+      "home": {
+        "title": "Order Histories",
+        "createLabel": "建立一筆新的 Order History",
+        "createOrEditLabel": "建立或編輯 Order History"
+      },
+      "created": "新的 Order History 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Order History 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Order History 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Order History {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Order History"
+      },
+      "status": "Status",
+      "description": "Description",
+      "createAt": "Create At",
+      "orderCart": "Order Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

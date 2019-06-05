@@ -1,0 +1,25 @@
+{
+  "dropshippingApp": {
+    "deliveryPackage": {
+      "home": {
+        "title": "Delivery Packages",
+        "createLabel": "Create a new Delivery Package",
+        "createOrEditLabel": "Create or edit a Delivery Package"
+      },
+      "created": "A new Delivery Package is created with identifier {{ param }}",
+      "updated": "A Delivery Package is updated with identifier {{ param }}",
+      "deleted": "A Delivery Package is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Delivery Package {{ id }}?"
+      },
+      "detail": {
+        "title": "Delivery Package"
+      },
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "delivery": "Delivery",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

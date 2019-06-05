@@ -1,0 +1,27 @@
+{
+  "dropshippingApp": {
+    "city": {
+      "home": {
+        "title": "Cities",
+        "createLabel": "创建新 City",
+        "createOrEditLabel": "创建或编辑 City"
+      },
+      "created": "City {{ param }} 创建成功",
+      "updated": "City {{ param }} 更新成功",
+      "deleted": "City {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 City {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "City"
+      },
+      "name": "Name",
+      "index": "Index",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "country": "Country",
+      "districts": "Districts"
+    }
+  }
+}

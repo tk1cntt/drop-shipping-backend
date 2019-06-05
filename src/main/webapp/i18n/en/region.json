@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "region": {
+      "home": {
+        "title": "Regions",
+        "createLabel": "Create a new Region",
+        "createOrEditLabel": "Create or edit a Region"
+      },
+      "created": "A new Region is created with identifier {{ param }}",
+      "updated": "A Region is updated with identifier {{ param }}",
+      "deleted": "A Region is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Region {{ id }}?"
+      },
+      "detail": {
+        "title": "Region"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "countries": "Countries",
+      "user": "User"
+    }
+  }
+}

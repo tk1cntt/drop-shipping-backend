@@ -1,0 +1,10 @@
+{
+  "dropshippingApp": {
+    "TransactionType": {
+      "null": "",
+      "DEPOSIT": "DEPOSIT",
+      "ORDER_PAYMENT": "ORDER_PAYMENT",
+      "REFUND": "REFUND"
+    }
+  }
+}

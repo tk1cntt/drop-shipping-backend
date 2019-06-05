@@ -1,0 +1,68 @@
+{
+    "name": "OrderTransaction",
+    "fields": [
+        {
+            "fieldName": "amount",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "note",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "TransactionType",
+            "fieldValues": "DEPOSIT,ORDER_PAYMENT,REFUND"
+        },
+        {
+            "fieldName": "orderDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "orderCart",
+            "otherEntityName": "orderCart",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderTransaction",
+            "relationshipName": "approver",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderTransaction",
+            "relationshipName": "createBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderTransaction",
+            "relationshipName": "updateBy",
+            "otherEntityField": "login"
+        }
+    ],
+    "changelogDate": "20190604231105",
+    "entityTableName": "order_transaction",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

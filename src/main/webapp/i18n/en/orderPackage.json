@@ -1,0 +1,36 @@
+{
+  "dropshippingApp": {
+    "orderPackage": {
+      "home": {
+        "title": "Order Packages",
+        "createLabel": "Create a new Order Package",
+        "createOrEditLabel": "Create or edit a Order Package"
+      },
+      "created": "A new Order Package is created with identifier {{ param }}",
+      "updated": "A Order Package is updated with identifier {{ param }}",
+      "deleted": "A Order Package is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Order Package {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Package"
+      },
+      "ladingCode": "Lading Code",
+      "heightPackage": "Height Package",
+      "widthPackage": "Width Package",
+      "lengthPackage": "Length Package",
+      "netWeight": "Net Weight",
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderCart": "Order Cart",
+      "packages": "Packages",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By",
+      "delivery": "Delivery"
+    }
+  }
+}

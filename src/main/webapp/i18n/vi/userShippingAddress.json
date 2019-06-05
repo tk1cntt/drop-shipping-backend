@@ -1,0 +1,32 @@
+{
+  "dropshippingApp": {
+    "userShippingAddress": {
+      "home": {
+        "title": "User Shipping Addresses",
+        "createLabel": "Thêm mới một User Shipping Address",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật User Shipping Address"
+      },
+      "created": "Một User Shipping Address mới được tạo với định danh {{ param }}",
+      "updated": "Một User Shipping Address cập nhật với định danh {{ param }}",
+      "deleted": "Một User Shipping Address đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa User Shipping Address {{ id }}?"
+      },
+      "detail": {
+        "title": "User Shipping Address"
+      },
+      "name": "Name",
+      "address": "Address",
+      "mobile": "Mobile",
+      "note": "Note",
+      "isShippingAddress": "Is Shipping Address",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "userProfile": "User Profile",
+      "createBy": "Create By",
+      "updateBy": "Update By",
+      "city": "City",
+      "district": "District"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "dropshippingApp": {
+    "deliveryPackage": {
+      "home": {
+        "title": "Delivery Packages",
+        "createLabel": "Thêm mới một Delivery Package",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Delivery Package"
+      },
+      "created": "Một Delivery Package mới được tạo với định danh {{ param }}",
+      "updated": "Một Delivery Package cập nhật với định danh {{ param }}",
+      "deleted": "Một Delivery Package đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Delivery Package {{ id }}?"
+      },
+      "detail": {
+        "title": "Delivery Package"
+      },
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "delivery": "Delivery",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

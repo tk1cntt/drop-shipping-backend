@@ -1,0 +1,35 @@
+{
+  "dropshippingApp": {
+    "delivery": {
+      "home": {
+        "title": "Deliveries",
+        "createLabel": "Create a new Delivery",
+        "createOrEditLabel": "Create or edit a Delivery"
+      },
+      "created": "A new Delivery is created with identifier {{ param }}",
+      "updated": "A Delivery is updated with identifier {{ param }}",
+      "deleted": "A Delivery is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Delivery {{ id }}?"
+      },
+      "detail": {
+        "title": "Delivery"
+      },
+      "deliveryMethod": "Delivery Method",
+      "deliveryMethodName": "Delivery Method Name",
+      "exportTime": "Export Time",
+      "packedTime": "Packed Time",
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "totalWeight": "Total Weight",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "packages": "Packages",
+      "orders": "Orders",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

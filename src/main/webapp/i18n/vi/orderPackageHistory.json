@@ -1,0 +1,29 @@
+{
+  "dropshippingApp": {
+    "orderPackageHistory": {
+      "home": {
+        "title": "Order Package Histories",
+        "createLabel": "Thêm mới một Order Package History",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Order Package History"
+      },
+      "created": "Một Order Package History mới được tạo với định danh {{ param }}",
+      "updated": "Một Order Package History cập nhật với định danh {{ param }}",
+      "deleted": "Một Order Package History đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Order Package History {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Package History"
+      },
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderPackage": "Order Package",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

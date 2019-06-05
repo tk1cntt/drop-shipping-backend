@@ -1,0 +1,25 @@
+{
+  "dropshippingApp": {
+    "orderComment": {
+      "home": {
+        "title": "Order Comments",
+        "createLabel": "Thêm mới một Order Comment",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Order Comment"
+      },
+      "created": "Một Order Comment mới được tạo với định danh {{ param }}",
+      "updated": "Một Order Comment cập nhật với định danh {{ param }}",
+      "deleted": "Một Order Comment đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Order Comment {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Comment"
+      },
+      "message": "Message",
+      "sender": "Sender",
+      "type": "Type",
+      "createAt": "Create At",
+      "orderCart": "Order Cart"
+    }
+  }
+}

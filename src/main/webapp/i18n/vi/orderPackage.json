@@ -1,0 +1,36 @@
+{
+  "dropshippingApp": {
+    "orderPackage": {
+      "home": {
+        "title": "Order Packages",
+        "createLabel": "Thêm mới một Order Package",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Order Package"
+      },
+      "created": "Một Order Package mới được tạo với định danh {{ param }}",
+      "updated": "Một Order Package cập nhật với định danh {{ param }}",
+      "deleted": "Một Order Package đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Order Package {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Package"
+      },
+      "ladingCode": "Lading Code",
+      "heightPackage": "Height Package",
+      "widthPackage": "Width Package",
+      "lengthPackage": "Length Package",
+      "netWeight": "Net Weight",
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderCart": "Order Cart",
+      "packages": "Packages",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By",
+      "delivery": "Delivery"
+    }
+  }
+}

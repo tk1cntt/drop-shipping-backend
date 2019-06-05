@@ -1,0 +1,12 @@
+{
+  "dropshippingApp": {
+    "CommentType": {
+      "null": "",
+      "CUSTOMER_LOG": "CUSTOMER_LOG",
+      "CUSTOMER_CHAT": "CUSTOMER_CHAT",
+      "STAFF_LOG": "STAFF_LOG",
+      "STAFF_CHAT": "STAFF_CHAT",
+      "SYSTEM_LOG": "SYSTEM_LOG"
+    }
+  }
+}

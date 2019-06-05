@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "district": {
+      "home": {
+        "title": "Districts",
+        "createLabel": "Create a new District",
+        "createOrEditLabel": "Create or edit a District"
+      },
+      "created": "A new District is created with identifier {{ param }}",
+      "updated": "A District is updated with identifier {{ param }}",
+      "deleted": "A District is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete District {{ id }}?"
+      },
+      "detail": {
+        "title": "District"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "city": "City",
+      "wards": "Wards"
+    }
+  }
+}

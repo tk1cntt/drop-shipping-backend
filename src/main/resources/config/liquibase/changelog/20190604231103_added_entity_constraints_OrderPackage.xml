@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity OrderPackage.
+    -->
+    <changeSet id="20190604231103-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="order_cart_id"
+                                 baseTableName="order_package"
+                                 constraintName="fk_order_package_order_cart_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="order_cart"/>
+
+        <addForeignKeyConstraint baseColumnNames="warehouse_id"
+                                 baseTableName="order_package"
+                                 constraintName="fk_order_package_warehouse_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="warehouse"/>
+
+        <addForeignKeyConstraint baseColumnNames="create_by_id"
+                                 baseTableName="order_package"
+                                 constraintName="fk_order_package_create_by_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="update_by_id"
+                                 baseTableName="order_package"
+                                 constraintName="fk_order_package_update_by_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="delivery_id"
+                                 baseTableName="order_package"
+                                 constraintName="fk_order_package_delivery_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="delivery"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,39 @@
+{
+    "name": "OrderComment",
+    "fields": [
+        {
+            "fieldName": "message",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sender",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "CommentType",
+            "fieldValues": "CUSTOMER_LOG,CUSTOMER_CHAT,STAFF_LOG,STAFF_CHAT,SYSTEM_LOG"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "orderCart",
+            "otherEntityName": "orderCart",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190604231106",
+    "entityTableName": "order_comment",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

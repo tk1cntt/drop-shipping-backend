@@ -1,0 +1,265 @@
+{
+    "name": "OrderCart",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "avatar",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "amountDiscount",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "amountPaid",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "depositAmount",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "depositRatio",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "depositTime",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "domesticShippingChinaFeeNDT",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "domesticShippingChinaFee",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "domesticShippingVietnamFee",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "quantityOrder",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "quantityPending",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "quantityReceived",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "rate",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "receiverName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "receiverAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "receiverMobile",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "receiverNote",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "refundAmountByAlipay",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "refundAmountByComplaint",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "refundAmountByOrder",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "refundAmountPending",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "shippingChinaVietnamFee",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "shippingChinaVietnamFeeDiscount",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "shopAliwang",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "shopId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "shopLink",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "shopName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "website",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "websiteCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "websiteLadingCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "OrderStatus",
+            "fieldValues": "DEPOSITED,ARE_BUYING,PURCHASED,SELLER_DELIVERY,WAREHOUSE_CHINA,DELIVERING_CHINA_VIETNAM,WAREHOUSE_VIETNAM,DELIVERY_REQUIREMENTS,DELIVERING_VIETNAM,DELIVERED,CANCELLED,LOST,RETURN"
+        },
+        {
+            "fieldName": "statusName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusStyle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tallyFee",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "totalAmount",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "totalAmountNDT",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "totalPaidByCustomer",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "serviceFee",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "serviceFeeDiscount",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "totalServiceFee",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "finalAmount",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "orderItem",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "items"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "orderComment",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "comments"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "orderHistory",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "histories"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "orderPackage",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "packages"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "orderTransaction",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "transactions"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "buyer",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "chinaStocker",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "vietnamStocker",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "exporter",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "createBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderCart",
+            "relationshipName": "updateBy",
+            "otherEntityField": "login"
+        }
+    ],
+    "changelogDate": "20190604231100",
+    "entityTableName": "order_cart",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

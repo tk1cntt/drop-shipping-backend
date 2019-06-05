@@ -1,0 +1,32 @@
+{
+  "dropshippingApp": {
+    "userShippingAddress": {
+      "home": {
+        "title": "User Shipping Addresses",
+        "createLabel": "创建新 User Shipping Address",
+        "createOrEditLabel": "创建或编辑 User Shipping Address"
+      },
+      "created": "User Shipping Address {{ param }} 创建成功",
+      "updated": "User Shipping Address {{ param }} 更新成功",
+      "deleted": "User Shipping Address {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 User Shipping Address {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "User Shipping Address"
+      },
+      "name": "Name",
+      "address": "Address",
+      "mobile": "Mobile",
+      "note": "Note",
+      "isShippingAddress": "Is Shipping Address",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "userProfile": "User Profile",
+      "createBy": "Create By",
+      "updateBy": "Update By",
+      "city": "City",
+      "district": "District"
+    }
+  }
+}

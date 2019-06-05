@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "district": {
+      "home": {
+        "title": "Districts",
+        "createLabel": "Thêm mới một District",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật District"
+      },
+      "created": "Một District mới được tạo với định danh {{ param }}",
+      "updated": "Một District cập nhật với định danh {{ param }}",
+      "deleted": "Một District đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa District {{ id }}?"
+      },
+      "detail": {
+        "title": "District"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "city": "City",
+      "wards": "Wards"
+    }
+  }
+}

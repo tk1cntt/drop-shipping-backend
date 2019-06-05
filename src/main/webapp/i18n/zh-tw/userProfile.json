@@ -1,0 +1,31 @@
+{
+  "dropshippingApp": {
+    "userProfile": {
+      "home": {
+        "title": "User Profiles",
+        "createLabel": "建立一筆新的 User Profile",
+        "createOrEditLabel": "建立或編輯 User Profile"
+      },
+      "created": "新的 User Profile 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 User Profile 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 User Profile 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 User Profile {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "User Profile"
+      },
+      "fullName": "Full Name",
+      "gender": "Gender",
+      "email": "Email",
+      "mobile": "Mobile",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "createBy": "Create By",
+      "updateBy": "Update By",
+      "city": "City",
+      "district": "District",
+      "address": "Address"
+    }
+  }
+}

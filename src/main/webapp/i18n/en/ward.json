@@ -1,0 +1,25 @@
+{
+  "dropshippingApp": {
+    "ward": {
+      "home": {
+        "title": "Wards",
+        "createLabel": "Create a new Ward",
+        "createOrEditLabel": "Create or edit a Ward"
+      },
+      "created": "A new Ward is created with identifier {{ param }}",
+      "updated": "A Ward is updated with identifier {{ param }}",
+      "deleted": "A Ward is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ward {{ id }}?"
+      },
+      "detail": {
+        "title": "Ward"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "district": "District"
+    }
+  }
+}

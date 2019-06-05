@@ -1,0 +1,104 @@
+{
+    "name": "ShoppingCartItem",
+    "fields": [
+        {
+            "fieldName": "itemId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "itemImage",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "itemLink",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "itemPrice",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "itemPriceNDT",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "itemNote",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesImage",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesMD5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "propertiesType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "quantity",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "requireMin",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "totalAmount",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "totalAmountNDT",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "shoppingCart",
+            "otherEntityName": "shoppingCart",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "shoppingCartItem",
+            "relationshipName": "createBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "shoppingCartItem",
+            "relationshipName": "updateBy",
+            "otherEntityField": "login"
+        }
+    ],
+    "changelogDate": "20190604231108",
+    "entityTableName": "shopping_cart_item",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

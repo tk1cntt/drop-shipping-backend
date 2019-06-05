@@ -1,0 +1,36 @@
+{
+  "dropshippingApp": {
+    "orderPackage": {
+      "home": {
+        "title": "Order Packages",
+        "createLabel": "创建新 Order Package",
+        "createOrEditLabel": "创建或编辑 Order Package"
+      },
+      "created": "Order Package {{ param }} 创建成功",
+      "updated": "Order Package {{ param }} 更新成功",
+      "deleted": "Order Package {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Order Package {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Order Package"
+      },
+      "ladingCode": "Lading Code",
+      "heightPackage": "Height Package",
+      "widthPackage": "Width Package",
+      "lengthPackage": "Length Package",
+      "netWeight": "Net Weight",
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderCart": "Order Cart",
+      "packages": "Packages",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By",
+      "delivery": "Delivery"
+    }
+  }
+}

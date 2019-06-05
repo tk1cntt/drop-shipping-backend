@@ -1,0 +1,49 @@
+{
+    "name": "OrderHistory",
+    "fields": [
+        {
+            "fieldName": "status",
+            "fieldType": "OrderStatus",
+            "fieldValues": "DEPOSITED,ARE_BUYING,PURCHASED,SELLER_DELIVERY,WAREHOUSE_CHINA,DELIVERING_CHINA_VIETNAM,WAREHOUSE_VIETNAM,DELIVERY_REQUIREMENTS,DELIVERING_VIETNAM,DELIVERED,CANCELLED,LOST,RETURN"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "orderCart",
+            "otherEntityName": "orderCart",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderHistory",
+            "relationshipName": "createBy",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "orderHistory",
+            "relationshipName": "updateBy",
+            "otherEntityField": "login"
+        }
+    ],
+    "changelogDate": "20190604231101",
+    "entityTableName": "order_history",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

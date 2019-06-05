@@ -1,0 +1,42 @@
+{
+  "dropshippingApp": {
+    "orderItem": {
+      "home": {
+        "title": "Order Items",
+        "createLabel": "Thêm mới một Order Item",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Order Item"
+      },
+      "created": "Một Order Item mới được tạo với định danh {{ param }}",
+      "updated": "Một Order Item cập nhật với định danh {{ param }}",
+      "deleted": "Một Order Item đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Order Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Item"
+      },
+      "avatar": "Avatar",
+      "originLink": "Origin Link",
+      "name": "Name",
+      "note": "Note",
+      "price": "Price",
+      "priceNDT": "Price NDT",
+      "propertiesId": "Properties Id",
+      "propertiesImage": "Properties Image",
+      "propertiesMD5": "Properties MD 5",
+      "propertiesName": "Properties Name",
+      "propertiesType": "Properties Type",
+      "quantityOrder": "Quantity Order",
+      "quantityPending": "Quantity Pending",
+      "quantityReceived": "Quantity Received",
+      "totalPrice": "Total Price",
+      "totalPriceNDT": "Total Price NDT",
+      "website": "Website",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderCart": "Order Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

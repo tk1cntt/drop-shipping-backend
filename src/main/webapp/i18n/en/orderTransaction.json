@@ -1,0 +1,30 @@
+{
+  "dropshippingApp": {
+    "orderTransaction": {
+      "home": {
+        "title": "Order Transactions",
+        "createLabel": "Create a new Order Transaction",
+        "createOrEditLabel": "Create or edit a Order Transaction"
+      },
+      "created": "A new Order Transaction is created with identifier {{ param }}",
+      "updated": "A Order Transaction is updated with identifier {{ param }}",
+      "deleted": "A Order Transaction is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Order Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Transaction"
+      },
+      "amount": "Amount",
+      "note": "Note",
+      "status": "Status",
+      "orderDate": "Order Date",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderCart": "Order Cart",
+      "approver": "Approver",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

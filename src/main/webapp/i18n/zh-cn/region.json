@@ -1,0 +1,26 @@
+{
+  "dropshippingApp": {
+    "region": {
+      "home": {
+        "title": "Regions",
+        "createLabel": "创建新 Region",
+        "createOrEditLabel": "创建或编辑 Region"
+      },
+      "created": "Region {{ param }} 创建成功",
+      "updated": "Region {{ param }} 更新成功",
+      "deleted": "Region {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Region {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Region"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "countries": "Countries",
+      "user": "User"
+    }
+  }
+}

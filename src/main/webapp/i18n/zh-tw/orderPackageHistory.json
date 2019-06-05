@@ -1,0 +1,29 @@
+{
+  "dropshippingApp": {
+    "orderPackageHistory": {
+      "home": {
+        "title": "Order Package Histories",
+        "createLabel": "建立一筆新的 Order Package History",
+        "createOrEditLabel": "建立或編輯 Order Package History"
+      },
+      "created": "新的 Order Package History 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Order Package History 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Order Package History 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Order Package History {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Order Package History"
+      },
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderPackage": "Order Package",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

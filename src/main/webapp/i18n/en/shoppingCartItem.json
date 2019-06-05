@@ -1,0 +1,40 @@
+{
+  "dropshippingApp": {
+    "shoppingCartItem": {
+      "home": {
+        "title": "Shopping Cart Items",
+        "createLabel": "Create a new Shopping Cart Item",
+        "createOrEditLabel": "Create or edit a Shopping Cart Item"
+      },
+      "created": "A new Shopping Cart Item is created with identifier {{ param }}",
+      "updated": "A Shopping Cart Item is updated with identifier {{ param }}",
+      "deleted": "A Shopping Cart Item is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Shopping Cart Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Shopping Cart Item"
+      },
+      "itemId": "Item Id",
+      "itemImage": "Item Image",
+      "itemLink": "Item Link",
+      "itemPrice": "Item Price",
+      "itemPriceNDT": "Item Price NDT",
+      "itemNote": "Item Note",
+      "propertiesId": "Properties Id",
+      "propertiesImage": "Properties Image",
+      "propertiesMD5": "Properties MD 5",
+      "propertiesName": "Properties Name",
+      "propertiesType": "Properties Type",
+      "quantity": "Quantity",
+      "requireMin": "Require Min",
+      "totalAmount": "Total Amount",
+      "totalAmountNDT": "Total Amount NDT",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "shoppingCart": "Shopping Cart",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

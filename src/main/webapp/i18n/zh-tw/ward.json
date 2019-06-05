@@ -1,0 +1,25 @@
+{
+  "dropshippingApp": {
+    "ward": {
+      "home": {
+        "title": "Wards",
+        "createLabel": "建立一筆新的 Ward",
+        "createOrEditLabel": "建立或編輯 Ward"
+      },
+      "created": "新的 Ward 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Ward 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Ward 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Ward {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Ward"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "district": "District"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "dropshippingApp": {
+    "delivery": {
+      "home": {
+        "title": "Deliveries",
+        "createLabel": "Thêm mới một Delivery",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Delivery"
+      },
+      "created": "Một Delivery mới được tạo với định danh {{ param }}",
+      "updated": "Một Delivery cập nhật với định danh {{ param }}",
+      "deleted": "Một Delivery đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Delivery {{ id }}?"
+      },
+      "detail": {
+        "title": "Delivery"
+      },
+      "deliveryMethod": "Delivery Method",
+      "deliveryMethodName": "Delivery Method Name",
+      "exportTime": "Export Time",
+      "packedTime": "Packed Time",
+      "status": "Status",
+      "statusName": "Status Name",
+      "statusStyle": "Status Style",
+      "totalWeight": "Total Weight",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "packages": "Packages",
+      "orders": "Orders",
+      "warehouse": "Warehouse",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}

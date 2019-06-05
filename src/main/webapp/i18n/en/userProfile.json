@@ -1,0 +1,31 @@
+{
+  "dropshippingApp": {
+    "userProfile": {
+      "home": {
+        "title": "User Profiles",
+        "createLabel": "Create a new User Profile",
+        "createOrEditLabel": "Create or edit a User Profile"
+      },
+      "created": "A new User Profile is created with identifier {{ param }}",
+      "updated": "A User Profile is updated with identifier {{ param }}",
+      "deleted": "A User Profile is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete User Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "User Profile"
+      },
+      "fullName": "Full Name",
+      "gender": "Gender",
+      "email": "Email",
+      "mobile": "Mobile",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "createBy": "Create By",
+      "updateBy": "Update By",
+      "city": "City",
+      "district": "District",
+      "address": "Address"
+    }
+  }
+}

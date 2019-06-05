@@ -1,0 +1,48 @@
+{
+    "name": "City",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "index",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "enabled",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "createAt",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "updateAt",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "country",
+            "otherEntityName": "country",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "district",
+            "otherEntityRelationshipName": "city",
+            "relationshipName": "districts"
+        }
+    ],
+    "changelogDate": "20190604231055",
+    "entityTableName": "city",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

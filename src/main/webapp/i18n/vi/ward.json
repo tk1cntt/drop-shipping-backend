@@ -1,0 +1,25 @@
+{
+  "dropshippingApp": {
+    "ward": {
+      "home": {
+        "title": "Wards",
+        "createLabel": "Thêm mới một Ward",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Ward"
+      },
+      "created": "Một Ward mới được tạo với định danh {{ param }}",
+      "updated": "Một Ward cập nhật với định danh {{ param }}",
+      "deleted": "Một Ward đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Ward {{ id }}?"
+      },
+      "detail": {
+        "title": "Ward"
+      },
+      "name": "Name",
+      "enabled": "Enabled",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "district": "District"
+    }
+  }
+}

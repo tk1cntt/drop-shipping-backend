@@ -1,0 +1,30 @@
+{
+  "dropshippingApp": {
+    "orderTransaction": {
+      "home": {
+        "title": "Order Transactions",
+        "createLabel": "建立一筆新的 Order Transaction",
+        "createOrEditLabel": "建立或編輯 Order Transaction"
+      },
+      "created": "新的 Order Transaction 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Order Transaction 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Order Transaction 刪除成功",
+      "delete": {
+        "question": "您確定要刪除 Order Transaction {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Order Transaction"
+      },
+      "amount": "Amount",
+      "note": "Note",
+      "status": "Status",
+      "orderDate": "Order Date",
+      "createAt": "Create At",
+      "updateAt": "Update At",
+      "orderCart": "Order Cart",
+      "approver": "Approver",
+      "createBy": "Create By",
+      "updateBy": "Update By"
+    }
+  }
+}
