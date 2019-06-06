@@ -19,4 +19,6 @@ public interface ShoppingCartRepository extends JpaRepository<ShoppingCart, Long
     @Query("select shoppingCart from ShoppingCart shoppingCart where shoppingCart.updateBy.login = ?#{principal.username}")
     List<ShoppingCart> findByUpdateByIsCurrentUser();
 
+    ShoppingCart findFirstByShopId(String shopId);
+
 }

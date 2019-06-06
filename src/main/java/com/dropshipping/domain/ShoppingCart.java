@@ -24,7 +24,8 @@ public class ShoppingCart implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    //aliwangwang: "天猫国际进口超市", shopId: "123971619"
+    //aliwangwang: "天猫国际进口超市", shopId: "123971619", shopName: "天猫国际进口超市", shopLink: "https://import.tmall.com"
     @Column(name = "aliwangwang")
     private String aliwangwang;
 

@@ -28,7 +28,7 @@ public class ShoppingCartItem implements Serializable {
     @Column(name = "item_image")
     private String itemImage;
 
-    @Column(name = "item_link")
+    @Column(name = "item_link", length = 2000)
     private String itemLink;
 
     @Column(name = "item_price")

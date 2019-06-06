@@ -15,7 +15,9 @@ import org.slf4j.LoggerFactory;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.ObjectUtils;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -55,23 +57,36 @@ public class ShoppingCartService {
      */
     public ShoppingCartDTO save(ShoppingCartDTO shoppingCartDTO) {
         log.debug("Request to save ShoppingCart : {}", shoppingCartDTO);
-        ShoppingCart shoppingCart = shoppingCartMapper.toEntity(shoppingCartDTO);
-        /*
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            log.debug(mapper.writeValueAsString(items));
-        } catch (Exception e) {
+        ShoppingCart currentShop = shoppingCartRepository.findFirstByShopId(shoppingCartDTO.getShopId());
+        if (ObjectUtils.isEmpty(currentShop)) {
+            ShoppingCart shoppingCart = shoppingCartMapper.toEntity(shoppingCartDTO);
+            shoppingCart = shoppingCartRepository.save(shoppingCart);
+            List<ShoppingCartItem> items = shoppingCartItemMapper.toEntity(shoppingCartDTO.getItems());
+            for (ShoppingCartItem shoppingCartItem: items) {
+                shoppingCartItem.setShoppingCart(shoppingCart);
+                shoppingCartItemRepository.save(shoppingCartItem);
+            }
+            currentShop = shoppingCart;
+        } else {
+            List<ShoppingCartItem> items = shoppingCartItemMapper.toEntity(shoppingCartDTO.getItems());
+            Set<ShoppingCartItem> currentItems = currentShop.getItems();
+            for (ShoppingCartItem shoppingCartItem: items) {
+                for (ShoppingCartItem currentItem: currentItems) {
+                    if (currentItem.getItemId().equals(shoppingCartItem.getItemId()) 
+                        && currentItem.getPropertiesId().equals(shoppingCartItem.getPropertiesId())
+                        && currentItem.getPropertiesName().equals(shoppingCartItem.getPropertiesName())
+                        && currentItem.getPropertiesType().equals(shoppingCartItem.getPropertiesType())) {
+                        currentItem.setQuantity(currentItem.getQuantity() + shoppingCartItem.getQuantity());
+                        currentItem.setTotalAmountNDT(currentItem.getTotalAmountNDT() + shoppingCartItem.getTotalAmountNDT());
+                    } else {
+                        shoppingCartItem.setShoppingCart(currentShop);
+                        shoppingCartItemRepository.save(shoppingCartItem);
+                    }                    
+                }
+            }
+            currentShop = shoppingCartRepository.save(currentShop);
         }
-        */
-        // shoppingCart.setItems(new HashSet<ShoppingCartItem>(items));
-        shoppingCart = shoppingCartRepository.save(shoppingCart);
-        List<ShoppingCartItem> items = shoppingCartItemMapper.toEntity(shoppingCartDTO.getItems());
-        for (ShoppingCartItem shoppingCartItem: items) {
-            // shoppingCart.addItems(shoppingCartItem);
-            shoppingCartItem.setShoppingCart(shoppingCart);
-            shoppingCartItemRepository.save(shoppingCartItem);
-        }
-        return shoppingCartMapper.toDto(shoppingCart);
+        return shoppingCartMapper.toDto(currentShop);
     }
 
     /**
