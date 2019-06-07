@@ -70,18 +70,21 @@ public class ShoppingCartService {
         } else {
             List<ShoppingCartItem> items = shoppingCartItemMapper.toEntity(shoppingCartDTO.getItems());
             Set<ShoppingCartItem> currentItems = currentShop.getItems();
+            boolean itemExist = false;
             for (ShoppingCartItem shoppingCartItem: items) {
                 for (ShoppingCartItem currentItem: currentItems) {
                     if (currentItem.getItemId().equals(shoppingCartItem.getItemId()) 
                         && currentItem.getPropertiesId().equals(shoppingCartItem.getPropertiesId())
                         && currentItem.getPropertiesName().equals(shoppingCartItem.getPropertiesName())
                         && currentItem.getPropertiesType().equals(shoppingCartItem.getPropertiesType())) {
-                        currentItem.setQuantity(currentItem.getQuantity() + shoppingCartItem.getQuantity());
-                        currentItem.setTotalAmountNDT(currentItem.getTotalAmountNDT() + shoppingCartItem.getTotalAmountNDT());
-                    } else {
-                        shoppingCartItem.setShoppingCart(currentShop);
-                        shoppingCartItemRepository.save(shoppingCartItem);
-                    }                    
+                            itemExist = true;
+                            currentItem.setQuantity(currentItem.getQuantity() + shoppingCartItem.getQuantity());
+                            currentItem.setTotalAmountNDT(currentItem.getTotalAmountNDT() + shoppingCartItem.getTotalAmountNDT());        
+                    }
+                }
+                if (!itemExist) {
+                    shoppingCartItem.setShoppingCart(currentShop);
+                    shoppingCartItemRepository.save(shoppingCartItem);
                 }
             }
             currentShop = shoppingCartRepository.save(currentShop);
